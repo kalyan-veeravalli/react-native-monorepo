@@ -1,0 +1,24 @@
+{
+  "name": "mono-repo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "start:project1": "npm start --workspace=project1",
+    "start:project2": "npm start --workspace=project2",
+    "ios:project1": "npm run ios --workspace=project1",
+    "ios:project2": "npm run ios --workspace=project2",
+    "android:project1": "npm run android --workspace=project1",
+    "android:project2": "npm run android --workspace=project2"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "packageManager": "npm@10.0.0"
+}

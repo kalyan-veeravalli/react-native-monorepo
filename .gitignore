@@ -1,0 +1,19 @@
+node_modules/
+.turbo/
+*.log
+.DS_Store
+
+# iOS
+ios/Pods/
+ios/build/
+*.xcworkspace
+!default.xcworkspace
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+
+# Metro
+.metro-health-check*
